@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_e476c1a866d54a57816f44d75a4ed536 {
+                position : relative;
+                width : 500.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e476c1a866d54a57816f44d75a4ed536" ></div>
+            
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_e476c1a866d54a57816f44d75a4ed536 = L.map(
+                                  'map_e476c1a866d54a57816f44d75a4ed536',
+                                  {center: [37.389041,-122.02181],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_93efe1f679e54998a9051358f95858bf = L.tileLayer(
+                'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+                    detectRetina: false
+                    }
+                ).addTo(map_e476c1a866d54a57816f44d75a4ed536);
+
+        
+    
+
+            var marker_efbb64a95f6243d1910c381e00df81ed = L.marker(
+                [38.80051,-120.139052],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e476c1a866d54a57816f44d75a4ed536);
+            
+    
+            var popup_57676043a4434a99947687782df49e5e = L.popup({maxWidth: '300'});
+
+            
+                var html_4c129579654d4be18301b1c8f0558f7e = $('<div id="html_4c129579654d4be18301b1c8f0558f7e" style="width: 100.0%; height: 100.0%;">Monks Roof</div>')[0];
+                popup_57676043a4434a99947687782df49e5e.setContent(html_4c129579654d4be18301b1c8f0558f7e);
+            
+
+            marker_efbb64a95f6243d1910c381e00df81ed.bindPopup(popup_57676043a4434a99947687782df49e5e);
+
+            
+        
+    
+
+            var marker_7ea854c8d9f944cc9c507730981276fe = L.marker(
+                [37.741713,-119.603534],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e476c1a866d54a57816f44d75a4ed536);
+            
+    
+            var popup_cd500ff90d8e4a37bb1406d0cc985201 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d9be45c1b78455f822054988aa2316e = $('<div id="html_8d9be45c1b78455f822054988aa2316e" style="width: 100.0%; height: 100.0%;">Midnight Lightning</div>')[0];
+                popup_cd500ff90d8e4a37bb1406d0cc985201.setContent(html_8d9be45c1b78455f822054988aa2316e);
+            
+
+            marker_7ea854c8d9f944cc9c507730981276fe.bindPopup(popup_cd500ff90d8e4a37bb1406d0cc985201);
+
+            
+        
+    
+                var lat_lng_popup_349f476a9dfc491e989668ae79850eb5 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_349f476a9dfc491e989668ae79850eb5
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_e476c1a866d54a57816f44d75a4ed536);
+                    }
+                map_e476c1a866d54a57816f44d75a4ed536.on('click', latLngPop);
+            
+</script>
